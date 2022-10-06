@@ -1,4 +1,4 @@
-# React-MaterialUI-Multi-Page-Application
+# React-MaterialUI-Multi-Page-Application Server Side Rendering
 
 React multi page application utilizes following NPN packages and Tech used to develop gaming website.
 
