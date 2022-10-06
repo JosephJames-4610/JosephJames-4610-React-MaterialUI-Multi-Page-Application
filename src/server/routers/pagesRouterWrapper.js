@@ -5,15 +5,32 @@ const pagesRouterWrapper = (__dirname) => {
   const pagesRouter = express.Router();
 
   pagesRouter.get('/home', (req, res) => {
-    console.log('Inside home route')
-    console.log(__dirname)
     fs.readFile(`${__dirname}/home.html`, (err, data) =>{
-      console.log('Inside home route Read')
       if (err) {      
-        console.log('Inside home route Error')  
         res.set(404); res.send('Error: File Not Found')
       } else {
-        console.log('Inside home route - file read')
+        res.set('Content-Type', 'text/html')
+        res.send(data);
+      }
+    })
+  })
+
+  pagesRouter.get('/identify-difference', (req, res) => {
+    fs.readFile(`${__dirname}/identifyDifference.html`, (err, data) =>{
+      if (err) {      
+        res.set(404); res.send('Error: File Not Found')
+      } else {
+        res.set('Content-Type', 'text/html')
+        res.send(data);
+      }
+    })
+  })
+
+  pagesRouter.get('/memory-check', (req, res) => {
+    fs.readFile(`${__dirname}/memoryCheck.html`, (err, data) =>{
+      if (err) {      
+        res.set(404); res.send('Error: File Not Found')
+      } else {
         res.set('Content-Type', 'text/html')
         res.send(data);
       }

@@ -24,4 +24,4 @@ const domRegistry = new DOMRegistry(React, render);
 
 domRegistry.register({ ComponentRDC })
 
-domRegistry.init(document)
+domRegistry.init(document);

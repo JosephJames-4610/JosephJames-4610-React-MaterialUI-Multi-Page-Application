@@ -3,7 +3,7 @@ const { resolve } = require('path');
 module.exports = {
   name: 'React Mi JS Compile',
   mode: 'development',
-  entry: './src/components/test.jsx',
+  entry: './src/components/index.js',
   output: {
     filename: 'bundle.js',
     path: resolve( __dirname, 'clientlibs/js')
