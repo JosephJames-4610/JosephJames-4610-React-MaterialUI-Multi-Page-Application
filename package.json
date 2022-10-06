@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "devStart": "nodemon ./src/server/server.js",
-    "launch": "webpack --config webpack.config.js"
+    "launch": "webpack --config webpack.config.cjs"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/JosephJames-4610/React-MaterialUI-Multi-Page-Application#readme",
   "dependencies": {
     "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
     "@mui/icons-material": "^5.10.6",
     "@mui/material": "^5.10.8",
     "cors": "^2.8.5",
@@ -34,6 +35,8 @@
     "@babel/preset-env": "^7.19.3",
     "babel-loader": "^8.2.5",
     "nodemon": "^2.0.20",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.8.4",
     "webpack": "^5.74.0"
   }
 }
